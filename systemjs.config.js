@@ -13,6 +13,7 @@
             // our app is within the app folder
             'ng-loader': '../src/systemjs-angular-loader.js',
             'app': 'app',
+            '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
             '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade-static.umd.js',
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
@@ -31,6 +32,7 @@
         // packages tells the System loader how to load when no filename and/or no extension
         packages: {
             app: {
+                main: './main.js',
                 defaultExtension: 'js',
                 meta: {
                     './*.js': {
