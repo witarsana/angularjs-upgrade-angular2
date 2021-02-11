@@ -11,7 +11,10 @@
         // map tells the System loader where to look for things
         map: {
             // our app is within the app folder
-            'app': 'app',
+            'ng-loader': '../src/systemjs-angular-loader.js',
+            app: '/app',
+            /* . . . */
+            '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade-static.umd.js',
 
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
